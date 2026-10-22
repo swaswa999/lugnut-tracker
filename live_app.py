@@ -15,6 +15,9 @@ cv2.setNumThreads(4)
 app = FastAPI(title="Live wheel tracking")
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=["localhost","127.0.0.1","[::1]","testserver"])
 
+from vision_routes import router as vision_router
+app.include_router(vision_router)
+
 
 @app.get("/")
 def index():

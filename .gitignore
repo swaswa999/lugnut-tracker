@@ -12,3 +12,10 @@ video-output/
 *.mov
 *.MOV
 *.webm
+.venv-vision/
+data/
+models/
+runs/
+*.pt
+*.onnx
+*.cache

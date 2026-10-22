@@ -4,6 +4,14 @@ A local app for tracking a tire and its lug nuts in webcam, USB camera, or uploa
 
 **Manual initialization is required.** This version uses OpenCV feature matching and optical flow. It does not automatically recognize lug nuts. Confidence measures geometric tracking quality, not object-recognition probability.
 
+## New: trainable wrist-camera vision
+
+Open **Start Lug Nut Alignment.command** for local data capture, lug-nut labeling,
+YOLO training support, and pixel-offset alignment guidance for a camera near the
+SO-ARM socket. **No real lug-nut training data or trained weights are included yet.**
+The software does not move the arm. See [VISION-README.md](VISION-README.md) for the
+capture-to-training workflow, calibration needs, and validation limits.
+
 ## Run
 
 Requires Python 3.12 and a browser with camera access.
